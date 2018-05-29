@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/karlsson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jeremy.se
+  * I am karlsson (https://keybase.io/karlsson) on keybase.
+  * I have a public key with fingerprint 7873 2E89 5933 2C45 DAC6  7CBA 5FB2 4593 86BE D08C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120dfcf51538f08265936613f8df2491d7f86d33f24eb2ff22d2331668a68d7b3220a",
+      "fingerprint": "78732e8959332c45dac67cba5fb2459386bed08c",
+      "host": "keybase.io",
+      "key_id": "5fb2459386bed08c",
+      "kid": "01014f78763e1824bd794dafe7b695b0cc43489986291c4c7deae95d4ab93e2344b30a",
+      "uid": "4113c2de66946606926a2bc51ccc1419",
+      "username": "karlsson"
+    },
+    "service": {
+      "hostname": "jeremy.se",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1527588302,
+  "expire_in": 157680000,
+  "prev": "a81b1aaf45f1c099a591cc66e91dfba42db58ccc7f503fb8c7377bd0981f6fee",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNvAnicbZJ9TJVVHMcvKDTehGLITFn2DKw/EJ/3l7teWHTJyxUkSyywe31ezgMP
+XJ778lwuXhEwYDJBjSSxVNhAzIo2AsNhCwTGhgjY3SBpsGSOIDUlX1rAWNl5mP7X
++efs/Pb9fn7f8ztnMGKNITTA1mmqP9zrPxow0n+yyJATkXC9BBEckg8xliAFYHUD
+dgloHluBIiFGBMVwVJJFmcIogpVRFqcpjqBpjJBZScZJDpMYmaUlgoAHIOCyjOMS
+ThAYTbM8zUqMQOA4yiOJiKyoucDtdCuqB2IZliFwwHIQRuAiSUm8SDOiwFOygJOw
+yNICkFBWhMY8h6Y7YDiB10CS4oA1eLCtxvsf/bPcKEbKsA1NAIzFSUFiOFLiZcAI
+NEcJqCiSBMlyHEvjHCaSIiMBHnCURPICRwCcIEmBWM1dtIojMYwQcQnQNEfSNEpz
+OM3jgkhhoihiJMbpQg24Vb4Q6Fl5t13THCpSmojAqlcRgT5Y/SZPFfnADQp9SRqA
+Rqfb4XGIDjss53k8Ts2o2zw+p64rBoLtKcEmKKoEhwgdXuDWFIg3YlApehQdiVE4
+Q7EsgeKJCNjvVNzApugKiqFZFC69D/BCJM9iAsbzMknJmIhyHE/BAYg0DeBbygJP
+4pJAsfBajEyhhCywIkMwjCChHIvJtAz0xBpwqQ7IZmBOPhcyNSVX5T1FboCUDvTv
+XWsICDUEBwXqv8sQGhL17M+p/VGGarKm0LXo9fc+nJ8N+zd4T15+ZXsqXpE2Q7zT
+GxMf9WSj5WrDAX+uBbO2/q7GPt591WSeH5hnVPq7xfjqd1+L6WiR4pY+bhyvzd4+
+eEwy3cmMHO1WIzPPhe87dXc6PDhtSjzxOHj99Q8+Sm/aVPT8YmTD4KXTL1hmjpzf
+l9s0Vnu+esJcHL519ty2qoA4e/HauhSLbcZ8wzo3Mt4UfiL9zaSfWmv++I0oiShL
+yLu1pc/cvuT4sDtz+cKQceHrH8uqZgqa6vb2mTqqPoke2LVueSHT/vo41raN2Umb
+Oqzub9TQi77koNKTl6NNE4MVFa1vZV1ufv/sXPY6zOpmUjNWNjDvhbjqb3+WMhxT
+u6UmZDj6V3N5QZh/eHN7m3f7WGB9ydjU6HFXX8Kj+LvYzi5flqnSZb8Um3XjyIOC
+hZWgTSN35pTJR6/WX1nOns0xaaONZw6N72YCI1wqmX/IOxTTM5VjaU/PObvZe+2l
+5HLLi8XTvpvlB309p5NTGDa572WftuZT61b174makq4d9xb3H8O+1P6aPPXnUPct
+JnL0bf/nMX0Ik3otLO6VCxlPOtsmAzY2Oytb0p4bdAQ1Wot2lP3wS+pKSGjXV7sm
+yfyfH2Z0MpEbbr5x4HDm/aXv9yDU8pVyc7qxw/ht3Znp9Q9SJ3paum4f/cLcfJD/
+xw8S77VfjLofG53Y8B9YyLxQ
+=LOIp
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/karlsson
+
+==================================================================
