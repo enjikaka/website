@@ -1,4 +1,8 @@
 baseURL = "https://jeremy.se"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Jeremy Karlsson"
 theme = "enjikaka"
+[author]
+name = "Jeremy Karlsson"
+nick = "enjikaka"
+email = "karlsson@jeremy.se"
