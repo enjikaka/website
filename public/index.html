@@ -2,16 +2,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jeremy Karlsson</title>
+  <title>Jeremy Karlsson - Web Developer</title>
   <link rel="pgpkey" href="/key.pub">
+  <style>
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+  }
+  body {
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+
+  main {
+    margin: 1rem;
+  }
+  </style>
 </head>
 <body>
-  <ul>
-    <li><a href="https://twitter.com/enjikaka" rel="me">@enjikaka on Twitter</a></li>
-    <li><a href="https://github.com/enjikaka" rel="me">Github</a></li>
-    <li><a href="https://mastodon.cloud/@karlsson" rel="me">@karlsson@mastodon.cloud</a></li>
-    <li><a href="mailto:karlsson@jeremy.se" rel="me">karlsson@jeremy.se</a></li>
-  </ul>
+  <header>
+    <h1>Jeremy Karsson</h1>
+  </header>
+  <main>
+    <section>
+      <article>
+        <h2>About me</h2>
+
+        <p>
+          I'm a web developer from Värmland in Sweden. I'm both norwegian and swedish, and convenient enoguh I work in Oslo.
+        </p>
+
+        <p>
+          I mostly program modern web application these days. Heavy JavaScript kind of stuffs. I also do some golang accationally and have previously done a few Java thingies, among these <a href="https://minecraft.jeremy.se/">plugins for Minecraft/Bukkit</a>.
+        </p>
+
+        <p>
+          Nature, music, history (mostly scandinavian), genealogy and etnobotanics are fields I find very interestings.
+        </p>
+
+        <p id="link-domain">
+
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2>Here's me on some social media:</h2>
+      <ul>
+        <li><a href="https://twitter.com/enjikaka" rel="me nofollow noopener">Twitter</a></li>
+        <li><a href="https://github.com/enjikaka" rel="me nofollow noopener">Github</a></li>
+        <li><a href="https://medium.com/@enjikaka" rel="me nofollow noopener">Medium</a></li>
+        <li><a href="https://www.last.fm/sv/user/enjikaka" rel="me nofollow noopener">LastFM</a></li>
+        <li><a href="https://mastodon.cloud/@karlsson" rel="me nofollow noopener">mastodon.cloud</a></li>
+        <li><a href="mailto:karlsson@jeremy.se">karlsson@jeremy.se</a></li>
+      </ul>
+    </section>
+  </main>
+  <script>
+  const paragraph = document.getElementById('link-domain');
+
+  function generateWithLink (domain) {
+    const nationality = domain === 'no' ? 'norwegian' : 'swedish';
+    const link = domain === 'no' ? 'jeremy.no' : 'jeremy.se';
+
+    return `As I am ${nationality} I also got a domain for that country. <a href="https://${link}" rel="me nofollow noopener">${link}</a>`;
+  }
+
+  if (document.location.hostname === "jeremy.se") {
+    paragraph.innerHTML = generateWithLink('no');
+  } else if (document.location.hostname === "jeremy.no") {
+    paragraph.innerHTML = generateWithLink('se');
+  }
+  </script>
 </body>
 </html>
