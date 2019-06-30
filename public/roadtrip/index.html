@@ -1,16 +1,22 @@
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Norge Roadtrip 2019</title>
   <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    width: 100%;
-    padding: 1rem;
+    margin: 1rem auto;
     max-width: 800px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-style: italic;
   }
 
   img {
@@ -24,17 +30,38 @@
   }
 
   .row {
-    display: flex;
-    align-items: center;
+    column-count: 2;
+  }
+
+  .row img:first-child {
+    margin-right: 1rem;
   }
 
   .row img {
     flex: 1;
   }
 
+  .row img:first-child {
+    margin-right: 1rem;
+  }
+
   .small-center {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      display: block;
+    }
+
+    .row img {
+      margin: 0 auto;
+    }
+
+    .small-center {
+      width: 80%;
+    }
   }
   </style>
 </head>
@@ -46,7 +73,7 @@
       <h2>Dag 1: Från Jösse härdad genom finnskogarna till jättarnas hem</h2>
       <span>Arvika -> Beitostølen</span>
       <figure>
-        <img src="trip-1.png">
+        <img src="trip-1.webp">
       </figure>
     </header>
 
@@ -92,7 +119,7 @@
       <h2>Dag 2: Jättarnas gränsland</h2>
       <span>Beitostølen -> Geiranger</span>
       <figure>
-        <img src="trip-2.png">
+        <img src="trip-2.webp">
       </figure>
     </header>
 
@@ -101,23 +128,17 @@
     </p>
 
     <figure class="small-center">
-      <img
-        src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/2730436.png?_encoded=2f66666666666678302f3030312f3b2934323031286874646977656c616373&_ts=16b6a43ce08"
-        alt="Valdresflye">
+      <img src="valdresflye.webp" alt="Valdresflye">
     </figure>
 
     <div class="row">
         <figure>
-          <img
-            src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706746/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=14932041a10"
-            alt="Rjupa">
+          <img src="rjupa.webp" alt="Rjupa">
           <figcaption>Rjupa</figcaption>
         </figure>
 
         <figure>
-          <img
-            src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706748/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=14932043180"
-            alt="Steinplassen">
+          <img src="steinplassen.webp" alt="Steinplassen">
           <figcaption>Stenplassen</figcaption>
         </figure>
     </div>
@@ -128,21 +149,17 @@
 
     <div class="row">
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706752/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=14932046830"
-          alt="Vargebakkane">
+        <img src="vargebakkane.webp" alt="Vargebakkane">
         <figcaption>Vargebakkane</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/2465630/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=1667802fa28"
-          alt="Gjende">
+        <img src="gjende.webp" alt="Gjende">
         <figcaption>Gjende. Här kanske vi även kan ta oss ett dopp?</figcaption>
       </figure>
     </div>
 
-    <p>Runt om Geiranger verkar det finnas bra med sjöar och terräng att övernatta i.</p>
+    <p>Mellan Skåjåk och Geiranger verkar det finnas bra med sjöar och terräng att övernatta i.</p>
 
     <section>
       <h3>Tesla</h3>
@@ -182,7 +199,7 @@
       <h2>Dag 3: Klättra upp till trollen</h2>
       <span>Geiranger -> Trollstigen</span>
       <figure>
-        <img src="trip-3.png">
+        <img src="trip-3.webp">
       </figure>
     </header>
 
@@ -191,23 +208,17 @@
     </p>
 
     <figure class="small-center">
-      <img
-        src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/2728574.png?_encoded=2f66666666666678302f3030312f3b2934323031286874646977656c616373&_ts=16b65d5a648"
-        alt="Geiranger - Trollstigen">
+      <img src="geiranger-trollstigen.webp" alt="Geiranger - Trollstigen">
     </figure>
 
     <div class="row">
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706270/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=14931f30ec8"
-          alt="Flydalsjuvet">
+        <img src="flydalsjuvet.webp" alt="Flydalsjuvet">
         <figcaption>Flydalsjuvet</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/708700/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=1493cc36618"
-          alt="Ørnesvingen">
+        <img src="ørnesvingen.webp" alt="Ørnesvingen">
         <figcaption>Ørnesvingen</figcaption>
       </figure>
     </div>
@@ -218,16 +229,12 @@
 
     <div class="row">
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706274.jpeg?_encoded=2f66666666666678302f30382f3b2930303231286874646977656c616373&_ts=14931f32a20"
-          alt="Gudbrandsjuvet">
+        <img src="gudbrandsjuvet.webp" alt="Gudbrandsjuvet">
         <figcaption>Gudbrandsjuvet</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="https://www.nasjonaleturistveger.no/no/turistvegene/_image/706285/label/large.jpeg?_encoded=2f66666666666678302f3030312f3b293431362c34323031286b636f6c62656c616373&_ts=14931f383f8"
-          alt="Trollstigen">
+        <img src="trollstigen.webp" alt="Trollstigen">
         <figcaption>Trollstigen</figcaption>
       </figure>
     </div>
