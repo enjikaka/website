@@ -24,21 +24,50 @@
     position: sticky;
     top: 0;
     background-color: var(--yellow-white);
+    z-index: 1;
   }
 
   h2 {
     height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .small-center {
+    width: 60%;
+    margin: 2rem auto;
+  }
+
+  .small-center figcaption {
+    font-style: italic;
   }
 
   blockquote {
+    position: relative;
     font-family: 'Noto Serif', serif;
     font-size: 1.5rem;
-    opacity: 0.6;
     margin-left: 0;
     padding: 0.6em 1em;
     font-style: italic;
-    background-color: rgba(0, 0, 0, 0.05);
+    color: #666;
+    background-color: rgba(152, 187, 82, 0.1);
     border-left: 4px solid rgba(0, 0, 0, 0.6);
+  }
+
+  blockquote::before {
+    content: "❝";
+    padding-right: 0.5ex;
+  }
+
+  blockquote::after {
+    content: "❞";
+  }
+
+  blockquote::before,
+  blockquote::after {
+    font-size: 1.5em;
+    line-height: 1em;
+    opacity: 0.75;
   }
 
   .row figure {
@@ -49,6 +78,11 @@
 
   figcaption {
     padding: 0.5rem;
+  }
+
+  .row a {
+    text-decoration: none;
+    color: #212121;
   }
 
   img {
@@ -77,11 +111,6 @@
 
   .row img:first-child {
     margin-right: 1rem;
-  }
-
-  .small-center {
-    width: 60%;
-    margin: 1rem auto;
   }
 
   @media (max-width: 650px) {
@@ -117,7 +146,7 @@
     </figure>
 
     <p>
-      Från Arvika åker vi till Charlottenberg, där vi kanske kan inhandla lite roadtrip-snacks. Därefter går skutan över norska gränsen till Kongsvinger och genom det norska landskapet. Denna sträcka tar oss till början av den södra delen av <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye">Valdresflye</a>. Att köra i detta fjäll-landskap som här väntar kan "liknas med att flyga". Vägen slingar och sträcker sig fram i långa och duvande former.
+      Från Arvika åker vi till Charlottenberg, där vi kanske kan inhandla lite roadtrip-snacks. Därefter går skutan över norska gränsen till Kongsvinger och genom det norska landskapet. Denna sträcka tar oss till början av den södra delen av <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye" target="_blank">Valdresflye</a>. Att köra i detta fjäll-landskap som här väntar kan "liknas med att flyga". Vägen slingar och sträcker sig fram i långa och duvande former.
     </p>
 
     <p>Vi övernattar i närheten av Beitostølen.</p>
@@ -134,7 +163,7 @@
     <strong>Länkar till rutt:</strong>
     <ul>
       <li>
-        <a href="https://abetterrouteplanner.com/?plan_uuid=a18bebca-97bc-494e-9c74-b98166fcc644">A Better Route Planner</a>
+        <a href="https://abetterrouteplanner.com/?plan_uuid=a18bebca-97bc-494e-9c74-b98166fcc644" target="_blank">A Better Route Planner</a>
       </li>
       <li>
         <a
@@ -166,39 +195,55 @@
     </blockquote>
 
     <p>
-      Vid Beitostølen börjar <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye">Valdresflye</a>. Här svävar vi bland fjällens vidder med utsikt över flera av Jotunheimens fjälltoppar.
+      Vid Beitostølen börjar <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye" target="_blank">Valdresflye</a>. Här åker vi genom de höga vägarna brevid Jotunheimen och får skåda flera fjälltoppar därifrån både från bilen och de fyra utsiktsplatser längst vägen.
     </p>
 
     <figure class="small-center">
       <img src="valdresflye.webp" alt="Valdresflye">
+      <figcaption>
+        Nasjonal turistveg Valdresflye går mellom Garli og Hindsæter med avstikkar til Gjende. Strekninga er 49 kilometer lang (veg 51). Vegen er eit godt alternativ om du skal nordover, eller du kan legge den inn som ein del av mange rundturar. Køyrande må være oppmerksame på tamrein på strekninga.
+      </figcaption>
     </figure>
 
     <div class="row">
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Rjupa" target="_blank">
         <figure>
           <img src="rjupa.webp" alt="Rjupa">
           <figcaption>Rjupa</figcaption>
         </figure>
+      </a>
 
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Steinplassen" target="_blank">
         <figure>
           <img src="steinplassen.webp" alt="Steinplassen">
           <figcaption>Stenplassen</figcaption>
         </figure>
+      </a>
     </div>
 
+    <blockquote>
+      Her kan du stoppe bilen nesten kvar som helst, og ta lengre eller kortare turar i fjellet. Rjupa og Vargbakkene er
+      spesielt tilrettelagde stoppestader, men er absolutt ikkje dei einaste stadene der du bør ta ein pause.
+    </blockquote>
+
     <p>
-      I <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye">Valdresflye</a> stannar vi vid de fyra sevärdheter som rekommenderas av Nationella Turistvägar: Rjupa, Steinplassen, Vargebakkane och Gjende. Här utlovas fantastisk utsikt över fjäll och vidder!
+      I <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye" target="_blank">Valdresflye</a> stannar vi vid de fyra sevärdheter som rekommenderas av Nationella Turistvägar: <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Rjupa" target="_blank">Rjupa</a>, <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Steinplassen" target="_blank">Steinplassen</a>, <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Vargebakkane" target="_blank">Vargebakkane</a> och <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Gjende" target="_blank">Gjende</a>. Här utlovas fantastisk utsikt över fjäll och vidder!
     </p>
 
     <div class="row">
-      <figure>
-        <img src="vargebakkane.webp" alt="Vargebakkane">
-        <figcaption>Vargebakkane</figcaption>
-      </figure>
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Vargebakkane" target="_blank">
+        <figure>
+          <img src="vargebakkane.webp" alt="Vargebakkane">
+          <figcaption>Vargebakkane</figcaption>
+        </figure>
+      </a>
 
-      <figure>
-        <img src="gjende.webp" alt="Gjende">
-        <figcaption>Gjende. Här kanske vi även kan ta oss ett dopp?</figcaption>
-      </figure>
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Gjende" target="_blank">
+        <figure>
+          <img src="gjende.webp" alt="Gjende">
+          <figcaption>Gjende. Här kanske vi även kan ta oss ett dopp?</figcaption>
+        </figure>
+      </a>
     </div>
 
     <p>Mellan Skåjåk och Geiranger verkar det finnas bra med sjöar och terräng att övernatta i.</p>
@@ -219,10 +264,10 @@
     <strong>Länkar till rutt:</strong>
     <ul>
       <li>
-        <a href="https://abetterrouteplanner.com/?plan_uuid=7c3a2e6f-852e-4a08-8bbd-6d1cb12cf691">A Better Route Planner</a>
+        <a href="https://abetterrouteplanner.com/?plan_uuid=7c3a2e6f-852e-4a08-8bbd-6d1cb12cf691" target="_blank">A Better Route Planner</a>
       </li>
       <li>
-        <a href="https://www.google.com/maps/dir/?api=1&origin=61.2485809%2C8.9064936&waypoints=61.34325%2C8.81282%7C61.402625%2C8.807967%7C61.464445%2C8.808067%7C61.495558%2C8.809392%7C61.883135%2C8.267249&destination=62.09625%2C7.21152&dir_action=navigate&travelmode=driving">Google Maps</a>
+        <a href="https://www.google.com/maps/dir/?api=1&origin=61.2485809%2C8.9064936&waypoints=61.34325%2C8.81282%7C61.402625%2C8.807967%7C61.464445%2C8.808067%7C61.495558%2C8.809392%7C61.883135%2C8.267249&destination=62.09625%2C7.21152&dir_action=navigate&travelmode=driving" target="_blank">Google Maps</a>
       </li>
     </ul>
 
@@ -244,7 +289,7 @@
     </figure>
 
     <p>
-      Denna dagen färdas vi genom ett än mer dramatisk landskap, <a href="https://www.nasjonaleturistveger.no/no/turistvegene/geiranger-trollstigen">Geiranger - Trollstigen</a>.
+      Denna dagen färdas vi genom ett än mer dramatisk landskap, <a href="https://www.nasjonaleturistveger.no/no/turistvegene/geiranger-trollstigen" target="_blank">Geiranger - Trollstigen</a>.
     </p>
 
     <figure class="small-center">
@@ -295,12 +340,12 @@
     <strong>Länkar till rutt:</strong>
     <ul>
       <li>
-        <a href="https://abetterrouteplanner.com/?plan_uuid=9244adbc-f319-4289-aca0-794dbf084c61">
+        <a href="https://abetterrouteplanner.com/?plan_uuid=9244adbc-f319-4289-aca0-794dbf084c61" target="_blank">
           A Better Route Planner
         </a>
       </li>
       <li>
-        <a href="https://www.google.com/maps/dir/?api=1&origin=62.0904%2C7.22549&waypoints=62.12629%2C7.167212%7C62.26286%2C7.1717%7C62.2845%2C7.18697%7C62.33007%2C7.46895%7C62.45328%2C7.66383%7C62.5577297583831%2C7.68532812595367&destination=62.55851%2C7.68329&dir_action=navigate&travelmode=driving">
+        <a href="https://www.google.com/maps/dir/?api=1&origin=62.0904%2C7.22549&waypoints=62.12629%2C7.167212%7C62.26286%2C7.1717%7C62.2845%2C7.18697%7C62.33007%2C7.46895%7C62.45328%2C7.66383%7C62.5577297583831%2C7.68532812595367&destination=62.55851%2C7.68329&dir_action=navigate&travelmode=driving" target="_blank">
           Google Maps
         </a>
       </li>
