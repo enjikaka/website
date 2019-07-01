@@ -20,7 +20,8 @@
     color: #212121;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     position: sticky;
     top: 0;
     background-color: var(--yellow-white);
@@ -133,12 +134,12 @@
 
   <dl>
     <dt>Total distans</dt>
-    <dd><span class="math">347+209+91</span> km</dd>
+    <dd><span id="total-distance"></span> km</dd>
     <dt>Total kostnad</dt>
-    <dd><span class="math">417+251</span> kr</dd>
+    <dd><span id="total-cost"></span> kr (<span id="split-cost"></span> kr á person)</dd>
   </dl>
 
-  <article>
+  <article id="dag-1">
     <h2>Dag 1: Från Jösse härdad genom finnskogarna till jättarnas hem</h2>
     <span>Arvika -> Beitostølen</span>
     <figure>
@@ -174,15 +175,15 @@
 
     <dl>
       <dt>Längd</dt>
-      <dd>347 km</dd>
+      <dd class="distance">347 km</dd>
       <dt>Körtid</dt>
       <dd>6 h</dd>
       <dt>Körkostnad</dt>
-      <dd>34,7 mil * 12 kr/mil = 417 kr</dd>
+      <dd class="cost"><span class="math">(347/10)*12</span> kr</dd>
     </dl>
   </article>
 
-  <article>
+  <article id="dag-2">
     <h2>Dag 2: Jättarnas gränsland</h2>
     <span>Beitostølen -> Geiranger</span>
     <figure>
@@ -216,7 +217,7 @@
       <a href="https://www.nasjonaleturistveger.no/no/turistvegene/valdresflye?attraksjon=Steinplassen" target="_blank">
         <figure>
           <img src="steinplassen.webp" alt="Steinplassen">
-          <figcaption>Stenplassen</figcaption>
+          <figcaption>Steinplassen</figcaption>
         </figure>
       </a>
     </div>
@@ -273,17 +274,17 @@
 
     <dl>
       <dt>Längd</dt>
-      <dd>209 km</dd>
+      <dd class="distance">209 km</dd>
       <dt>Körtid</dt>
       <dd>4 h</dd>
       <dt>Körkostnad</dt>
-      <dd>20,9 mil * 12 kr/mil = 251 kr</dd>
+      <dd class="cost"><span class="math">(209/10)*12</span> kr</dd>
     </dl>
   </article>
 
-  <article>
+  <article id="dag-3">
     <h2>Dag 3: Klättra upp till trollen</h2>
-    <span>Geiranger -> Trollstigen</span>
+    <span>Geiranger -> Åndalsnes</span>
     <figure>
       <img src="trip-3.webp">
     </figure>
@@ -353,26 +354,324 @@
 
     <dl>
       <dt>Längd</dt>
-      <dd>91 km</dd>
+      <dd class="distance">91 km</dd>
       <dt>Körtid</dt>
       <dd>3 h</dd>
       <dt>Körkostnad</dt>
-      <dd>9,1 mil * 12 kr/mil = 110 kr</dd>
+      <dd>110 kr</dd>
       <dt>Kostnad färja Eidsdal-Linge</dt>
       <dd>98 NOK ~ 107 SEK</dd>
       <dt>Total kostnad</dt>
-      <dd>358 kr</dd>
-      <dd>358 kr</dd>
+      <dd class="cost"><span class="math">110+107</span> kr</dd>
     </dl>
   </article>
+
+  <article id="dag-4">
+    <h2>Dag 4: Den pittoreska kusten</h2>
+    <span>Åndalsnes -> <a href="https://www.visitnorway.no/reisemal/vestlandet/alesund-sunnmore/" target="_blank">Ålesund</a> -> <a href="https://www.visitnorway.no/reisemal/vestlandet/nordvest/molde/" target="_blank">Molde</a></span>
+    <figure>
+      <img src="trip-4.webp">
+    </figure>
+
+    <p>
+      <a href="https://www.visitnorway.no/reisemal/vestlandet/alesund-sunnmore/" target="_blank">Ålesund</a> är en fin stad belägen vid havet. Pittoresk beyggelse och fantastisk utsikt. Här kan vi vandra runt bland hamnarna och skåda både hav och fjäll runt om oss. Perfekt läge att klämma något god fisk-måltid när vi är i denna kuststad!
+    </p>
+
+    <figure>
+      <img src="ålesund-byrampen.webp" alt="Byrampen, Ålesund">
+      <figcaption>Byrampen, Ålesund</figcaption>
+    </figure>
+
+    <blockquote>
+      I Ålesund må man stadig se opp. Opp på fjellene, opp på den vide himmelen og opp på de vakre fasadene. Etter en stor bybrann i 1904, der nesten hele byen brant til ned, ble bykjernen gjenreist i jugendstil.
+    </blockquote>
+
+    <figure>
+      <img src="molde.webp" alt="Molde">
+      <figcaption>Molde</figcaption>
+    </figure>
+
+    <p>
+      Även Molde är en fin stad vid vattnet vi kan spana in. Genom att övernatta i närheten där är vi redo för ett ännu mer spännande äventyr, se dag fem!
+    </p>
+
+    <blockquote>
+      Rosenes by ligger sydvent til langs Romsdalsfjorden og er kjent for sine vakre omgivelser og fantastiske utsikt.
+    </blockquote>
+
+    <section>
+      <h3>Tesla</h3>
+      <ol>
+        <li>Åndalsnes: 70 %</li>
+        <li><a href="https://www.visitnorway.no/reisemal/vestlandet/alesund-sunnmore/" target="_blank">Ålesund</a>: 50 &</li>
+        <li>Ørskog, Supercharger: 40 % -> 72 % (13 min)</li>
+        <li><a href="https://www.visitnorway.no/reisemal/vestlandet/nordvest/molde/" target="_blank">Molde</a>: 70 %</li>
+      </ol>
+    </section>
+
+    <strong>Länkar till rutt:</strong>
+    <ul>
+      <li>
+        <a href="https://abetterrouteplanner.com/?plan_uuid=c26528f4-757e-49bf-b8a6-ad5ad89db7a2" target="_blank">
+          A Better Route Planner
+        </a>
+      </li>
+      <li>
+        <a href="https://www.google.com/maps/dir/?api=1&origin=62.55851%2C7.68329&waypoints=62.47151%2C6.17293%7C62.520404%2C6.915983%7C62.6518%2C7.08508%7C62.73689%2C7.16911&destination=62.73972%2C7.19132&dir_action=navigate&travelmode=driving" target="_blank">
+          Google Maps
+        </a>
+      </li>
+    </ul>
+
+    <dl>
+      <dt>Längd</dt>
+      <dd class="distance">185 km</dd>
+      <dt>Körtid</dt>
+      <dd>4 h</dd>
+      <dt>Körkostnad</dt>
+      <dd>222 kr</dd>
+      <dt>Kostnad färja Vestnes-Molde</dt>
+      <dd>144 NOK ~ 157 SEK</dd>
+      <dt>Total kostnad</dt>
+      <dd class="cost"><span class="math">222+157</span> kr</dd>
+    </dl>
+  </article>
+
+  <article id="dag-5">
+    <h2>Dag 5: Atlanterhavsvegen till vikingarnas huvudstad</h2>
+    <span>Molde -> Kristiansund -> Trondheim</span>
+    <figure>
+      <img src="trip-5.webp">
+    </figure>
+
+    <p>
+      Den nästan 4 mil långa vägen som löper över många små öar med åtta broar är <em>"århundradets norska konstruktion"</em> och låg 2006 högst upp på The Guardians lista över de bästa turistvägarna i världen.
+    </p>
+
+    <blockquote>
+      Atlanterhavsvegen har blitt omtalt som verdens vakreste bilreise.
+    </blockquote>
+
+    <figure class="small-center">
+      <img src="atlanterhavsvegen.webp" alt="Atlanterhavsvegen">
+      <figcaption>Nasjonal turistveg Atlanterhavsvegen går mellom Kårvåg og Bud og er 36 km lang</figcaption>
+    </figure>
+
+    <p>
+      Längst atlanterhavsvegen finns flera stopp där man kan skåda utöver havet!
+    </p>
+
+    <div class="row">
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/atlanterhavsvegen?attraksjon=Geit%C3%B8ya" target="_blank">
+        <figure>
+          <img src="geitøya.webp" alt="Geitøya">
+          <figcaption>Geitøya</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/atlanterhavsvegen?attraksjon=Eldhus%C3%B8ya" target="_blank">
+        <figure>
+          <img src="eldhusøya.webp" alt="Eldhusøya">
+          <figcaption>Eldhusøya</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <blockquote>
+      Ingenting er så mektig som havet. Vår viktigste transportveg i århundrer, vår inntektskilde og utgangspunkt for uendelige rekreasjonsmuligheter. Få steder bringer deg så nær havet og lar deg være en del av det på samme måte som Atlanterhavsvegen.
+    </blockquote>
+
+    <div class="row">
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/atlanterhavsvegen?attraksjon=Storseisundbrua" target="_blank">
+        <figure>
+          <img src="storseisundbrua.webp" alt="Storseisundbrua">
+          <figcaption>Storseisundbrua</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://www.nasjonaleturistveger.no/no/turistvegene/atlanterhavsvegen?attraksjon=Askev%C3%A5gen" target="_blank">
+        <figure>
+          <img src="askevågen.webp" alt="Askevågen">
+          <figcaption>Askevågen</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <p>
+      Efter en mäkta turen över atlanterhavsvegen för vi skutan vidare mot vikigarnas huvudstad; Nidaros. Eller Trondheim som staden idag heter.
+    </p>
+
+    <p>Övernattning i naturen kring Trondheim.</p>
+
+    <section>
+      <h3>Tesla</h3>
+      <ol>
+        <li>Molde: 70 %</li>
+        <li>Bud: 63 %</li>
+        <li>Kristiansund: 51 %</li>
+        <li>Aspøya, Supercharger: 45 % -> 61 %</li>
+        <li>Leinstrand-Klett, Supercharger: 35 % -> 73 %</li>
+        <li>Trondheim: 70 %</li>
+      </ol>
+    </section>
+
+    <strong>Länkar till rutt:</strong>
+    <ul>
+      <li>
+        <a href="https://abetterrouteplanner.com/?plan_uuid=10615d9f-7e64-41d5-9a8d-d6cf80606bf3" target="_blank">
+          A Better Route Planner
+        </a>
+      </li>
+      <li>
+        <a href="https://www.google.com/maps/dir/?api=1&origin=62.73972%2C7.19132&waypoints=62.90709%2C6.91434%7C63.11078%2C7.72985%7C63.05324%2C8.12528%7C63.06833%2C8.22699%7C63.325319%2C10.305137&destination=63.43101%2C10.39211&dir_action=navigate&travelmode=driving" target="_blank">
+          Google Maps
+        </a>
+      </li>
+    </ul>
+
+    <dl>
+      <dt>Längd</dt>
+      <dd class="distance">301 km</dd>
+      <dt>Körtid</dt>
+      <dd>6 h</dd>
+      <dt>Körkostnad</dt>
+      <dd>363 kr</dd>
+      <dt>Kostnad färja Halsa-Kanestraum</dt>
+      <dd>105 NOK ~ 115 SEK</dd>
+      <dt>Total kostnad</dt>
+      <dd class="cost"><span class="math">363+115</span> kr</dd>
+    </dl>
+  </article>
+
+  <article id="dag-6">
+    <h2>Dag 6: Mot varme grader</h2>
+    <span>Trondheim -> Lillehammer</span>
+    <figure>
+      <img src="trip-6.webp">
+    </figure>
+
+    <p>
+      Vi spenderar dagen i <a href="https://visittrondheim.no/" target="_blank">Trondheim</a> för att upptäcka mer läckerheter i denna stad.
+    </p>
+
+    <a href="https://visittrondheim.no/opplev/nidarosdomen" target="_blank">
+      <figure>
+        <img src="nidarosdomen.webp" alt="Nidarosdomen, Trondheim">
+        <figcaption>Nidarosdomen, Trondheim</figcaption>
+      </figure>
+    </a>
+
+    <blockquote>
+      Nidarosdomen er verdens nordligste gotiske katedral. Katedralen er bygget over graven til Olav den hellige,
+      vikingkongen som kristnet Norge.
+    </blockquote>
+
+    <div class="row">
+      <a href="https://visittrondheim.no/opplev/bryggene" target="_blank">
+        <figure>
+          <img src="bryggene-trondheim.webp" alt="Bryggene, Trondheim">
+          <figcaption>Bryggene, Trondheim</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://visittrondheim.no/opplev/gamle-bybro" target="_blank">
+        <figure>
+          <img src="gamle-bybro-trondheim.webp" alt="Gamle bybro, Trondheim">
+          <figcaption>Gamle bybro, Trondheim</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <p>
+      Sedan tar vi vårat pick och pack och åker halvvägs hem till Värmland. På vägen stannar vi och kikar på en stavkyrka i Ringebu.
+    </p>
+
+    <figure>
+      <img src="ringebu-stavkirke.webp" alt="Ringebu stavkirke">
+      <figcaption>Ringebu stavkirke</figcaption>
+    </figure>
+
+    <p>Vi övernattar någon stans i skogarna kring Lillehammer.</p>
+
+    <section>
+      <h3>Tesla</h3>
+      <ol>
+        <li>Trondheim: 70 %</li>
+        <li>Berkåk, Supercharger: 52 % -> 68 % (6 min)</li>
+        <li>Ringebu stavkyrka: 32 %</li>
+        <li>Lillehammer, Supercharger: 24 % -> 70 % (18 min)</li>
+      </ol>
+    </section>
+
+    <strong>Länkar till rutt:</strong>
+    <ul>
+      <li>
+        <a href="https://abetterrouteplanner.com/?plan_uuid=51c8138e-ba72-4959-93d1-7b29da526367" target="_blank">
+          A Better Route Planner
+        </a>
+      </li>
+      <li>
+        <a href="https://www.google.com/maps/dir/?api=1&origin=63.43101%2C10.39211&waypoints=62.832142%2C10.010141%7C61.50873%2C10.17323%7C61.13045%2C10.43491&destination=61.115%2C10.46365&dir_action=navigate&travelmode=driving" target="_blank">
+          Google Maps
+        </a>
+      </li>
+    </ul>
+
+    <dl>
+      <dt>Längd</dt>
+      <dd class="distance">337 km</dd>
+      <dt>Körtid</dt>
+      <dd>5 h</dd>
+      <dt>Körkostnad</dt>
+      <dd class="cost">405 kr</dd>
+    </dl>
+  </article>
+
+  <article id="dag-7">
+    <h2>Dag 7: De varmaste av grader</h2>
+    <span>Lillehammer -> Arvika</span>
+
+    <p>Klockan är 02:12 på natten. Gör den här imorgon. :D</p>
+
+  </article>
+
+  <hr>
+
+  <footer>
+    <small>Körkostnad beräknas per mil där en mil kostar 12 kr att köra. Kostnad för färja kan tillkomma på vissa sträckor
+      och räknas då in i total kostnad för den sträckan. Total kostnad splittar vi sedan på antal resenärer.</small>
+  </footer>
+
   <script>
   const mathSpans = Array.from(document.querySelectorAll('.math'));
 
   mathSpans.forEach(span => {
-    const text = span.textContent.split('+').map(n => parseInt(n, 10)).reduce((a, n) => a + n, 0);
+    const text = Math.ceil(eval(span.textContent));
+
     span.textContent = text;
     span.className = null;
   });
+
+  const getTextContent = el => el.textContent;
+  const toNumber = text => parseInt(text, 10);
+  const sum = (total, number) => number + total;
+
+  const costDds = Array.from(document.querySelectorAll('.cost'));
+  const totalSum = costDds
+    .map(getTextContent)
+    .map(toNumber)
+    .reduce(sum, 0);
+
+  document.querySelector('#total-cost').textContent = totalSum;
+  document.querySelector('#split-cost').textContent = Math.ceil(totalSum / 4);
+
+  const distanceDds = Array.from(document.querySelectorAll('.distance'));
+  const totalDistance = distanceDds
+    .map(getTextContent)
+    .map(toNumber)
+    .reduce(sum, 0);
+
+  document.querySelector('#total-distance').textContent = totalDistance;
   </script>
 </body>
 </html>
