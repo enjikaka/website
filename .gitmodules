@@ -1,0 +1,3 @@
+[submodule "public/bivax"]
+	path = public/bivax
+	url = git@github.com:enjikaka/bivaxljus.git
