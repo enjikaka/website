@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(239, 239, 179);
+      margin: 0;
+      font-size: 14pt;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .slider {
+      display: block;
+      contain: strict;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      scroll-snap-align: center;
+    }
+
+    .slide {
+      display: flex;
+      contain: strict;
+      width: 100vw;
+      height: 100vh;
+      padding: 32pt;
+      box-sizing: border-box;
+      flex-flow: column nowrap;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: auto 100%;
+      background-position: 100% center;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .background + main h1,
+    .background + main p {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .slide button {
+      all: unset;
+      background-color: white;
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .slide main {
+      flex: 1;
+    }
+
+    .blur {
+      filter: blur(5px);
+    }
+
+    img,
+    video {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 30vh;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide">
+      <main>
+        <h1>Hej Julia</h1>
+
+        <p>
+          Jag ansöker härmed - väldigt seriöst - om rollen som både vän och/eller framtida livspartner. Det blir ju säkert kul vad än det slutar i!
+        </p>
+
+        <p>
+          Dra igenom alla slides, så får du veta vad jag är för filur.
+        </p>
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide">
+      <main>
+        <h1>CV á person - Del 1</h1>
+
+        <p>
+          Rolig är det sista folk INTE beskriver mig som. Jag nuddar inte vid någon människas liv utan att lämna leenden. På jobbet är jag inte snål med att sprida gläde i vår chatt!
+        </p>
+
+        <img src="edmeme.png">
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide bg">
+      <div class="background" style="background-image:url(alveberget.jpg)"></div>
+      <main>
+        <h1>CV á person - Del 2</h1>
+        <p>
+          Jag gillar att spendera mycket tid i skogen. Så till den mildra grad att jag köpte hus i Glaskogens naturrervat. Illustrerad som bakgrundsbild är utsikten över sjön ca 1 km från mitt blivande hus. Så när jag inte är aktiv med att hajka i skogen så kommer jag ha mycket arbete på gården att leka med. Måla utvändigt och invändigt. Inreda och odla grönsaker...
+        </p>
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide bg">
+      <div class="background blur" style="background-image:url(ogarden.jpg)"></div>
+      <main>
+        <h1>CV á person - Del 3</h1>
+        <p>
+          Du är väl säker nyfiken på hur huset ser ut också? Här är det. Och min odling i förgrunden!
+        </p>
+        <img src="ogarden.jpg">
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide">
+      <main>
+        <h1>CV á person - Del 4</h1>
+        <p>
+          I övrigt gillar jag musik - spelar några instrument, och har pluggat musik.
+        </p>
+        <p>
+          Är duktig på att laga mat och att skriva poesi.
+        </p>
+        <video src="Snapchat-1269261614.mp4" preload repeat controls></video>
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide">
+      <main>
+        <h1>CV á relationer</h1>
+        <p>
+          Här är det inte mycket historik att tala om vad det gäller kärlek. Det har mest gått åt fan, men jag tror har vad som krävs!
+        </p>
+      </main>
+      <button class="next">↓</button>
+    </div>
+
+    <div class="slide">
+      <main>
+        <h1>Med det är inte allt...</h1>
+        <p>
+          ...häng med på en skogspromenad så kan vi lära känna varandra på riktigt. Så har du chansen att upptäcka allt den här poetiskt roliga och naturälskande jössehäringen har att erbjuda!
+        </p>
+        <em>Kram,</em><br>
+        <em>Jeremy</em>
+      </main>
+    </div>
+  </div>
+  <script>
+    const slideToNext = event => {
+      event.target.parentNode.nextElementSibling.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    [...document.querySelectorAll('.next')].forEach(
+      nextButton => nextButton.addEventListener('click', slideToNext, false)
+    );
+  </script>
+</body>
+</html>
